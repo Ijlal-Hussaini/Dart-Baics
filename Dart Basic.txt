@@ -1,0 +1,26 @@
+class Car {
+  String company;
+  String model;
+  String time;
+
+  Car(this.company, this.model, this.time);
+
+  void start() {
+    print("Starting the $company $model at $time.");
+  }
+
+  void stop() {
+    print("Stopping the $company $model.");
+  }
+
+  void horn() {
+    print("Honking the horn of the $company $model.");
+  }
+}
+
+void main() {
+  Car myCar = Car("Toyota", "Corolla", "2:30pm");
+  myCar.start();
+  myCar.horn();
+  myCar.stop();
+}
